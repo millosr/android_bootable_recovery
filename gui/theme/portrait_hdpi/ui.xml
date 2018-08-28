@@ -283,7 +283,7 @@
 			<text color="%text_color%">
 				<conditions>
 					<condition var1="tw_no_battery_percent" var2="0"/>
-					<condition var1="tw_battery" op="&gt;" var2="0"/>
+					<condition var1="tw_battery" op="&gt;" var2="-1"/>
 					<condition var1="tw_battery" op="&lt;" var2="101"/>
 				</conditions>
 				<font resource="font_m"/>

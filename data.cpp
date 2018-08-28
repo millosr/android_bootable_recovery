@@ -1016,7 +1016,7 @@ int DataManager::GetMagicValue(const string& varName, string& value)
 				else
 					charging = ' ';
 			}
-			nextSecCheck = curTime.tv_sec + 60;
+			nextSecCheck = curTime.tv_sec + ((lastVal > 0) ? 60 : 1);
 		}
 
 		sprintf(tmp, "%i%%%c", lastVal, charging);
